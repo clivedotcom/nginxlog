@@ -1,12 +1,13 @@
-Welcome to the nginxlog wiki!
-
+# About
+Nginxlog is a Nginx Access log viewer/visualizer written in PHP, with a MySQL database to store the data once it is extracted from the log file.  
 # Requirements
 Nginx Server
 PHP 8+
 MySQL Database
+Ipinfo.io API Key
 # Install
-Download the files and update the config files with the database login details & Iploc key
+Download the code, update the config files with the database login details & API key.
 # Additional Setup
-Add stuff to nginx.conf
-Create cronjob to run file nightly...
-IF you ahve cloudflar or another proxy, add that too...
+Add code to nginx.conf to modify what is stored in the log file, and where the log file is.
+If you have cloudflare or another proxy, you will need to modify nginx.conf to use the correct IP address.
+Create cronjob to run script nightly to extract previous days data from the log files into the database.

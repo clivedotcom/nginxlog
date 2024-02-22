@@ -1,9 +1,9 @@
 # About
 Nginxlog is a Nginx Access log viewer/visualizer written in PHP, with a MySQL database to store the data once it is extracted from the log file.  
 # Requirements
-Nginx Server
-PHP 8+
-MySQL Database
+Nginx Server <br />
+PHP 8+ <br />
+MySQL Database <br />
 Ipinfo.io API Key
 # Install
 Download the code, update the config files with the database login details & API key.
